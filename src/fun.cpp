@@ -15,7 +15,7 @@ unsigned int faStr1(const char *str) {
             }
             inWord = false;
             hasDigit = false;
-        }else {
+        } else {
             inWord = true;
             if (std::isdigit(str[i])) {
                 hasDigit = true;
@@ -43,11 +43,11 @@ unsigned int faStr2(const char *str) {
             inWord = false;
             startsWithUpper = false;
             onlyLowercase = true;
-        }else {
+        } else {
             if (!inWord) {
                 startsWithUpper = std::isupper(str[i]);
                 inWord = true;
-            }else {
+            } else {
                 if (!std::islower(str[i])) {
                     onlyLowercase = false;
                 }
@@ -73,7 +73,7 @@ unsigned int faStr3(const char *str) {
                 wordCount++;
                 currentLength = 0;
             }
-        }else {
+        } else {
             currentLength++;
         }
     }
